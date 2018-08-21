@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-  var socket = io();
+  var socket = io.connect();
 
   $('#epic_button').click(function() {
     socket.emit('increment_count');
